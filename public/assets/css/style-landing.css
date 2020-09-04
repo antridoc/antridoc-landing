@@ -1,0 +1,136 @@
+/* Color code:
+
+Biru - #1e4383
+Oren - #ffab29
+Ijo - #21808f
+
+*/
+.offcanvas-nav-brand img {
+	max-height: 45px;
+	margin-top: 2px;
+}
+
+.agency-banner-content img {
+  max-height: 28px;
+  margin-top: -15px;
+}
+
+.agency-banner-content.banner-style6 .banner-title {
+	font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #000;
+}
+
+.agency-banner6 a.btn-primary {
+  margin-top: 20px;
+}
+
+.typing-effect > h2{
+  font-size: 60px;
+  font-weight: 600;
+  color: #ffab29;
+}
+
+.hr-timeline-section .agency-section-title.text-center.style5 {
+  margin-bottom: 200px;
+}
+
+.hr-timeline-section .timeline-wave {
+  top: calc(50% + 110px)
+}
+
+.typing-effect > h2 .color-char, .agency-section-title.style5 .main-title, 
+.info-card .info-card-body .card-title {
+	color: #1e4383;
+}
+
+.typing-effect > h2 .typed-cursor {
+  color: #ffab29;
+}
+
+.btn.style5 {
+	background-color: #1e4383;
+}
+
+.number-count {
+	color: #eceefd ! important;
+}
+
+.hr-timeline-content-wraper .hr-timeline-content > i {
+	color: #1e4383 ! important;
+}
+
+.info-card {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.growth-card-section {
+	padding-bottom: 0px;
+}
+
+.growth-card-section .info-card-header img {
+  max-height: 84px;
+}
+
+.growth-card-section .main-title.medium {
+  font-size: 42px;
+}
+
+.customer-satisfaction-list img {
+  max-height: 84px;
+  margin-bottom: 20px;
+}
+
+.customer-satisfaction-wraper h2.satisfaction-title {
+  color: #1E4383;
+}
+
+.team-section-area h4.main-title {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #134288 !important;
+}
+
+.single-team-style3 .image {
+  border-radius: 50%;
+  max-width: 160px;
+  margin: auto;
+}
+
+.single-team-style3 .team-content .xs-title {
+  font-size: 18px;
+  color: #000;
+}
+
+.calltoaction-section-3 {
+    background-color: #134288;
+}
+
+.call-to-action-content-3 .call-to-action-title {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.offcanvas-title, .offcanvas-list-widget li p, .offcanvas-menu.single-page-menu > li > a:hover {
+    color: #134288;
+}
+
+.offcanvas-menu.single-page-menu > li > a:hover::before {
+	background-color: #134288;
+}
+
+.growth-card-section .info-card {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@media ( max-width: 1024px) {
+	.agency-banner-content.banner-style6 .banner-title > span {
+    	font-family: inherit;
+    	display: block;
+    	font-size: 16px;
+    	font-weight: 400;
+	}
+}
