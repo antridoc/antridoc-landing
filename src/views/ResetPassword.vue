@@ -37,7 +37,7 @@
 
 <script>
 
-const axios = require('axios')
+const UserNotificationServices = require('./../services/UserNotificationServices')
 
 export default {
     name: 'VerifiedAccount',
@@ -52,33 +52,28 @@ export default {
         }
     },
     methods: {
-        submitForm() {
-
+        async submitForm() {
             this.messageData.message = ''
-
             this.$loading(true)
 
             // Get token
-            const params = new URLSearchParams( window.location.search );
-            const token = params.get('token');
+            const params = new URLSearchParams( window.location.search )
+            const token = params.get('token')
             
-            axios({
-                method: 'post',
-                url: 'http://localhost/api/auth/reset-password?resetPasswordToken=' + token,
-                data: {
+            try {
+                await UserNotificationServices.forgotPassword({
                     password: this.newPassword,
                     re_password: this.confirmedPassword,
-                }
-            }).then( (res) => {
-                console.log('res', res)
-                this.messageData.success = true
-                this.messageData.message = 'Success'
-                this.$loading(false)
-            }).catch( (error) => {
+                }, token).run( res => {
+                    this.messageData.success = true
+                    this.messageData.message = 'Success'
+                    this.$loading(false)
+                })
+            } catch(err) {
                 this.messageData.success = false
-                this.messageData.message = error.response.data.error ? error.response.data.error : error.message
+                this.messageData.message = err.response.data ? err.response.data.error : err.message
                 this.$loading(false)
-            })
+            }
         }
     },
 }
